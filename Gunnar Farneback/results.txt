@@ -1,0 +1,15 @@
+File name: 2025_01_31-04_58_22_PM_output
+Average MSE: 41.2786
+Average SSIM: 0.7981
+Average TSSIM: 0.9516
+Average Flow Consistency Error: 0.0436
+Total Execution Time: 450.46 seconds
+
+File name: 2025_01_31-05_15_33_PM_output
+Params: numLevels=10, pyrScale=0.7, fastPyramids=False, winSize=28, numIters=25, polyN=7, polySigma=1.5, flags=0
+Average MSE: 41.3250
+Average PSNR: 21.3885 dB
+Average SSIM: 0.7978
+Average TSSIM: 0.9517
+Average Flow Consistency Error: 0.0457
+Total Execution Time: 501.78 seconds

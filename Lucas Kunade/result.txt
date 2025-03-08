@@ -1,5 +1,0 @@
-Average MSE: 40.3544
-Average PSNR: 21.9195 dB
-Average SSIM: 0.8063
-Average TSSIM: 0.9997
-Total Execution Time: 376.19 seconds

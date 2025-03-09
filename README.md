@@ -14,8 +14,7 @@ This project is not intended to be the best VFI solution available but rather to
 
 ## Links
 
-[Demo Video](https://www.youtube.com/watch?v=W2cAjZULx2U)
-[Google Drive]()  
+[Demo Video](https://www.youtube.com/watch?v=W2cAjZULx2U) || [Google Drive]()  
 
 Note: The drive link contains a 'data' folder which has all the input and outputs of the 3 implementations done in this project. Refer to the 'Readme.txt' in the data folder for more details
 
@@ -90,5 +89,5 @@ Note: Folder 4 and 5 only mentions the main file that was run to generate the re
       It also contains only the necessary files required to replicate the results of my project
       For other features, visit the Github repository for each model
 
-  [SuperSloMo](https://github.com/avinashpaliwal/Super-SloMo) <br/>
+  [SuperSloMo](https://github.com/avinashpaliwal/Super-SloMo) || 
   [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN)

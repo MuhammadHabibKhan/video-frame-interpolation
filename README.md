@@ -60,7 +60,7 @@ Use ```python eval.py --help ``` for more details
 
 - inference_realesrgan.py --> Run Real-ESRGAN on provided frames
 
-##### Usage: 
+      ##### Usage: 
 
 > python inference_realesrgan.py -n RealESRGAN_x4plus -i infile -o outfile [options]...
 
@@ -68,7 +68,7 @@ A common command:
 
 ``` python inference_realesrgan.py -n RealESRGAN_x4plus -i infile --outscale 3.5 --face_enhance ```
 
->  -h                   show this help
+>  -h                   show this help \n
 >  -i --input           Input image or folder. Default: inputs
 >  -o --output          Output folder. Default: results
 >  -n --model_name      Model name. Default: RealESRGAN_x4plus
@@ -90,6 +90,3 @@ Note: Folder 4 and 5 only mentions the main file that was run to generate the re
 
   [SuperSloMo](https://github.com/avinashpaliwal/Super-SloMo)
   [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN)
-
-
-## Future Work

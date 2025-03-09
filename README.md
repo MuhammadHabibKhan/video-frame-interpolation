@@ -47,11 +47,11 @@ Note: The drive link contains a 'data' folder which has all the input and output
 
 - eval.py --> Run Super-SloMo on provided video
 
-##### Usage:
+   ##### Usage:
 
-``` python eval.py data/input.mp4 --checkpoint=data/SuperSloMo.ckpt --output=data/output.mp4 --scale=4 ```
+  ``` python eval.py data/input.mp4 --checkpoint=data/SuperSloMo.ckpt --output=data/output.mp4 --scale=4 ```
 
-Use ```python eval.py --help ``` for more details
+  Use ```python eval.py --help ``` for more details
 
 - Download the model checkpoint [SuperSloMo.ckpt](https://drive.google.com/file/d/1IvobLDbRiBgZr3ryCRrWL8xDbMZ-KnpF/view) and place it in "data/"
 ---------------------------------------------------------------------------------------------------------------
@@ -62,21 +62,21 @@ Use ```python eval.py --help ``` for more details
 
    ##### Usage: 
 
-      > python inference_realesrgan.py -n RealESRGAN_x4plus -i infile -o outfile [options]...
+        python inference_realesrgan.py -n RealESRGAN_x4plus -i infile -o outfile [options]...
 
    A common command: 
 
-      ``` python inference_realesrgan.py -n RealESRGAN_x4plus -i infile --outscale 3.5 --face_enhance ```
+     ```python inference_realesrgan.py -n RealESRGAN_x4plus -i infile --outscale 3.5 --face_enhance ```
 
 >  -h                   show this help <br/>
->  -i --input           Input image or folder. Default: inputs
->  -o --output          Output folder. Default: results
->  -n --model_name      Model name. Default: RealESRGAN_x4plus
->  -s, --outscale       The final upsampling scale of the image. Default: 4
->  --suffix             Suffix of the restored image. Default: out
->  -t, --tile           Tile size, 0 for no tile during testing. Default: 0
->  --face_enhance       Whether to use GFPGAN to enhance face. Default: False
->  --fp32               Use fp32 precision during inference. Default: fp16 (half precision).
+>  -i --input           Input image or folder. Default: inputs <br/>
+>  -o --output          Output folder. Default: results <br/>
+>  -n --model_name      Model name. Default: RealESRGAN_x4plus <br/>
+>  -s, --outscale       The final upsampling scale of the image. Default: 4 <br/>
+>  --suffix             Suffix of the restored image. Default: out <br/>
+>  -t, --tile           Tile size, 0 for no tile during testing. Default: 0 <br/>
+>  --face_enhance       Whether to use GFPGAN to enhance face. Default: False <br/>
+>  --fp32               Use fp32 precision during inference. Default: fp16 (half precision). <br/>
 >  --ext                Image extension. Options: auto | jpg | png, auto means using the same extension as inputs. 
 
 > Default: auto

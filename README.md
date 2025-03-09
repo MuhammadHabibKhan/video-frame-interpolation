@@ -21,63 +21,68 @@ Note: The drive link contains a 'data' folder which has all the input and output
 
 ### System Specifications
 
-CPU: Intel Xeon E5-1680v4 | 8c 16t @ max 3.4ghz when all cores active
-RAM: 32GB DDR4 @ Quad Channel
-GPU: RTX 2060 6GB
+- CPU: Intel Xeon E5-1680v4 | 8c 16t @ max 3.4ghz when all cores active
+- RAM: 32GB DDR4 @ Quad Channel
+- GPU: RTX 2060 6GB
 
 ### Directory Structure
 
 1) Folder: Frame Utils
-------------------------------------------------------------------------------------------------------------------
+
 - frame.py --> frame and video handling code
 - metrics.py --> metrics calculation code (psnr and ssim)
-===============================================================================================================
+---------------------------------------------------------------------------------------------------------------
 
 2) Folder: Gunnar Farneback
----------------------------------------------------------------------------------------------------------------
+
 - gf.py --> Implementation of VFI using GF Optical Flow Estimation
-===============================================================================================================
+---------------------------------------------------------------------------------------------------------------
 
 3) Folder: Lucas Kanade
----------------------------------------------------------------------------------------------------------------
+
 - optk_flow.py --> Implementation of VFI using LK Optical Flow Estimation
-===============================================================================================================
+---------------------------------------------------------------------------------------------------------------
 
 4) Folder: Super-SloMo
----------------------------------------------------------------------------------------------------------------
+
 - eval.py --> Run Super-SloMo on provided video
 
-> Usage: python eval.py data/input.mp4 --checkpoint=data/SuperSloMo.ckpt --output=data/output.mp4 --scale=4
-> Use python eval.py --help for more details
+##### Usage:
 
-Download the model checkpoint 'SuperSloMo.ckpt' and place it in "data/"
-Link: https://drive.google.com/file/d/1IvobLDbRiBgZr3ryCRrWL8xDbMZ-KnpF/view 
-===============================================================================================================
+``` python eval.py data/input.mp4 --checkpoint=data/SuperSloMo.ckpt --output=data/output.mp4 --scale=4 ```
+
+Use ```python eval.py --help ``` for more details
+
+- Download the model checkpoint [SuperSloMo.ckpt](https://drive.google.com/file/d/1IvobLDbRiBgZr3ryCRrWL8xDbMZ-KnpF/view) and place it in "data/"
+---------------------------------------------------------------------------------------------------------------
 
 5) Folder: Real-ESRGAN
----------------------------------------------------------------------------------------------------------------
+
 - inference_realesrgan.py --> Run Real-ESRGAN on provided frames
 
-> Usage: python inference_realesrgan.py -n RealESRGAN_x4plus -i infile -o outfile [options]...
+##### Usage: 
 
-> A common command: python inference_realesrgan.py -n RealESRGAN_x4plus -i infile --outscale 3.5 --face_enhance
+> python inference_realesrgan.py -n RealESRGAN_x4plus -i infile -o outfile [options]...
 
-  -h                   show this help
-  -i --input           Input image or folder. Default: inputs
-  -o --output          Output folder. Default: results
-  -n --model_name      Model name. Default: RealESRGAN_x4plus
-  -s, --outscale       The final upsampling scale of the image. Default: 4
-  --suffix             Suffix of the restored image. Default: out
-  -t, --tile           Tile size, 0 for no tile during testing. Default: 0
-  --face_enhance       Whether to use GFPGAN to enhance face. Default: False
-  --fp32               Use fp32 precision during inference. Default: fp16 (half precision).
-  --ext                Image extension. Options: auto | jpg | png, auto means using the same extension as inputs. 
+A common command: 
 
-Default: auto
+``` python inference_realesrgan.py -n RealESRGAN_x4plus -i infile --outscale 3.5 --face_enhance ```
 
-Download the model weights 'RealESRGAN_x4plus.pth' that were used and place it under "weights/"
-Link: https://github.com/xinntao/Real-ESRGAN/releases/download/v0.1.0/RealESRGAN_x4plus.pth
-===============================================================================================================
+>  -h                   show this help
+>  -i --input           Input image or folder. Default: inputs
+>  -o --output          Output folder. Default: results
+>  -n --model_name      Model name. Default: RealESRGAN_x4plus
+>  -s, --outscale       The final upsampling scale of the image. Default: 4
+>  --suffix             Suffix of the restored image. Default: out
+>  -t, --tile           Tile size, 0 for no tile during testing. Default: 0
+>  --face_enhance       Whether to use GFPGAN to enhance face. Default: False
+>  --fp32               Use fp32 precision during inference. Default: fp16 (half precision).
+>  --ext                Image extension. Options: auto | jpg | png, auto means using the same extension as inputs. 
+
+> Default: auto
+
+- Download the model weights [RealESRGAN_x4plus.pth](https://github.com/xinntao/Real-ESRGAN/releases/download/v0.1.0/RealESRGAN_x4plus.pth) that were used and place it under "weights/"
+---------------------------------------------------------------------------------------------------------------
 
 Note: Folder 4 and 5 only mentions the main file that was run to generate the results
       It also contains only the necessary files required to replicate the results of my project
@@ -88,5 +93,3 @@ Note: Folder 4 and 5 only mentions the main file that was run to generate the re
 
 
 ## Future Work
-
-===============================================================================================================

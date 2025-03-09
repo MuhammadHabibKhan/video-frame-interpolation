@@ -60,15 +60,15 @@ Use ```python eval.py --help ``` for more details
 
 - inference_realesrgan.py --> Run Real-ESRGAN on provided frames
 
-      ##### Usage: 
+   ##### Usage: 
 
-> python inference_realesrgan.py -n RealESRGAN_x4plus -i infile -o outfile [options]...
+      > python inference_realesrgan.py -n RealESRGAN_x4plus -i infile -o outfile [options]...
 
-A common command: 
+   A common command: 
 
-``` python inference_realesrgan.py -n RealESRGAN_x4plus -i infile --outscale 3.5 --face_enhance ```
+      ``` python inference_realesrgan.py -n RealESRGAN_x4plus -i infile --outscale 3.5 --face_enhance ```
 
->  -h                   show this help \n
+>  -h                   show this help <br/>
 >  -i --input           Input image or folder. Default: inputs
 >  -o --output          Output folder. Default: results
 >  -n --model_name      Model name. Default: RealESRGAN_x4plus

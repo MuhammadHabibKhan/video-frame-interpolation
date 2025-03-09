@@ -19,13 +19,13 @@ This project is not intended to be the best VFI solution available but rather to
 
 Note: The drive link contains a 'data' folder which has all the input and outputs of the 3 implementations done in this project. Refer to the 'Readme.txt' in the data folder for more details
 
-### System Specifications
+## System Specifications
 
 - CPU: Intel Xeon E5-1680v4 | 8c 16t @ max 3.4ghz when all cores active
 - RAM: 32GB DDR4 @ Quad Channel
 - GPU: RTX 2060 6GB
 
-### Directory Structure
+## Directory Structure
 
 1) Folder: Frame Utils
 
@@ -68,18 +68,20 @@ Note: The drive link contains a 'data' folder which has all the input and output
 
      ```python inference_realesrgan.py -n RealESRGAN_x4plus -i infile --outscale 3.5 --face_enhance ```
 
->  -h                   show this help <br/>
->  -i --input           Input image or folder. Default: inputs <br/>
->  -o --output          Output folder. Default: results <br/>
->  -n --model_name      Model name. Default: RealESRGAN_x4plus <br/>
->  -s, --outscale       The final upsampling scale of the image. Default: 4 <br/>
->  --suffix             Suffix of the restored image. Default: out <br/>
->  -t, --tile           Tile size, 0 for no tile during testing. Default: 0 <br/>
->  --face_enhance       Whether to use GFPGAN to enhance face. Default: False <br/>
->  --fp32               Use fp32 precision during inference. Default: fp16 (half precision). <br/>
->  --ext                Image extension. Options: auto | jpg | png, auto means using the same extension as inputs. 
+- Following is the list of options available:
 
-> Default: auto
+   >  -h                   show this help <br/>
+   >  -i --input           Input image or folder. Default: inputs <br/>
+   >  -o --output          Output folder. Default: results <br/>
+   >  -n --model_name      Model name. Default: RealESRGAN_x4plus <br/>
+   >  -s, --outscale       The final upsampling scale of the image. Default: 4 <br/>
+   >  --suffix             Suffix of the restored image. Default: out <br/>
+   >  -t, --tile           Tile size, 0 for no tile during testing. Default: 0 <br/>
+   >  --face_enhance       Whether to use GFPGAN to enhance face. Default: False <br/>
+   >  --fp32               Use fp32 precision during inference. Default: fp16 (half precision). <br/>
+   >  --ext                Image extension. Options: auto | jpg | png, auto means using the same extension as inputs.
+  
+   > Default: auto
 
 - Download the model weights [RealESRGAN_x4plus.pth](https://github.com/xinntao/Real-ESRGAN/releases/download/v0.1.0/RealESRGAN_x4plus.pth) that were used and place it under "weights/"
 ---------------------------------------------------------------------------------------------------------------
@@ -88,5 +90,5 @@ Note: Folder 4 and 5 only mentions the main file that was run to generate the re
       It also contains only the necessary files required to replicate the results of my project
       For other features, visit the Github repository for each model
 
-  [SuperSloMo](https://github.com/avinashpaliwal/Super-SloMo)
+  [SuperSloMo](https://github.com/avinashpaliwal/Super-SloMo) <br/>
   [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN)

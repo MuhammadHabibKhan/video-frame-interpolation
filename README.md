@@ -5,7 +5,7 @@ Research-based Final Year Project for Bachelor's degree in Computer Science
 ------------------------------------------------------------------------------------------------------------
 
 ![image](https://github.com/user-attachments/assets/257740a8-4d30-453e-bf06-3e7f1d287de0)
-Illustration of Frame Interpolation
+Illustration of Frame Interpolation | [Source](https://commons.wikimedia.org/wiki/File:Motion_interpolation_example.jpg)
 
 ## Abstract
 

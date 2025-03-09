@@ -4,6 +4,9 @@ Research-based Final Year Project for Bachelor's degree in Computer Science
 
 ------------------------------------------------------------------------------------------------------------
 
+![image](https://github.com/user-attachments/assets/257740a8-4d30-453e-bf06-3e7f1d287de0)
+Illustration of Frame Interpolation
+
 ## Abstract
 
 Video Frame Interpolation (VFI) is a critical task in computer vision, enabling smoother motion in videos by generating intermediate frames. Traditional optical flow-based methods, such as Lucas-Kanade and Gunnar Farneback, often fail to handle complex motion, occlusions, and fine details effectively, leading to noticeable artifacts. To overcome these limitations, I propose an enhanced VFI approach using a hybrid deep learning framework that combines Convolutional Neural Networks (CNN) and Generative Adversarial Networks (GANs).

@@ -27,6 +27,9 @@ https://github.com/user-attachments/assets/72ead80a-cfcb-4ab2-979e-773358ffa273
 https://github.com/user-attachments/assets/bd55b3d6-3786-4aee-8528-c4ca5222b407
 
 
+Note: The videos shown here are trimmed out of the original input and output vidoes present in the drive folder
+
+
 | Method                     | PSNR   | SSIM  |
 | -------------------------- | ------ | ----- |
 | Lucas-Kanade               | 30.49  | 0.56  |

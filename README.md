@@ -15,6 +15,27 @@ In this project, I first implemented frame interpolation using traditional optic
 
 This project is not intended to be the best VFI solution available but rather to demonstrate how a relatively lightweight deep learning-based framework can significantly outperform traditional optical flow methods while remaining computationally efficient. The performance of both approaches was compared using qualitative and quantitative metrics, highlighting the advantages of deep learning in video enhancement. The expected outcome of this project is a more robust and accessible VFI model that can be applied to slow-motion video generation, frame rate upscaling, and video restoration, showcasing the potential of deep learning in advancing video processing techniques.
 
+## Results
+
+#### Input Video @ 12.5 fps
+
+https://github.com/user-attachments/assets/72ead80a-cfcb-4ab2-979e-773358ffa273
+
+
+#### Output Video @ 25 fps 4K Upscaled
+
+https://github.com/user-attachments/assets/bd55b3d6-3786-4aee-8528-c4ca5222b407
+
+
+| Method                     | PSNR   | SSIM  |
+| -------------------------- | ------ | ----- |
+| Lucas-Kanade               | 30.49  | 0.56  |
+| Gunnar-Farneback           | 29.94  | 0.48  |
+| Super-SloMo                | 30.92  | 0.83  |
+| Super-SloMo + Real-ESRGAN  | 30.95  | 0.81  |
+
+For more details on the results, refer to the documentation present in the Google Drive folder
+
 ## Links
 
 [Demo Video](https://www.youtube.com/watch?v=W2cAjZULx2U) | [Google Drive](https://drive.google.com/drive/folders/1CQSXuuCh6Pmf6hjtWDWnntrJCrHuCaUr?usp=sharing)  

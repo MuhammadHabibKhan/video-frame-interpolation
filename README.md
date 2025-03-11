@@ -48,12 +48,15 @@ Note: The drive link contains a 'data' folder which has all the input and output
 ## Pre-Requisites
 
 - I recommend creating two environments, one for Lucas-Kanade, Gunnar-Farneback & Super-SloMo implementation and install the packages in requirements.txt using the command<br/>
+
    ``` pip install -r requirements.txt```
 
 - The second enviroment should be created to run Real-ESRGAN as it has a dependency on an older version of pytorch which in turns requires an older version of numpy. Install the packages in requirements-gan.txt using the command<br/>
+
    ``` pip install -r requirements-gan.txt ```
 
 - After installing the packages for Real-ESRGAN, develop the setup.py using the command<br/>
+
    ``` pip setup.py develop ```
 
 
